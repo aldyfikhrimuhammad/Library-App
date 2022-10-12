@@ -18,12 +18,46 @@
 
   <div class="container-fluid">
     <div class="row d-flex flex-column justify-content-center align-items-center">
-      <div class="col-6" style="height: 50vh ; width: 100vw;">
-        <div class="back-btn float-start m-2"><a href=""><iconify-icon icon="bi:arrow-down-circle" width="25" height="25" rotate="90deg"></iconify-icon></a></div>
+      <div class="col-6" style="height: 50vh ; width: 100vw; background-image: url(/assets/dilan1990.jpg); background-repeat: no-repeat; background-size: cover;">
+        <div class="back-btn float-start m-2"><a href="index.html" class="text-light"><iconify-icon icon="bi:arrow-down-circle" width="25" height="25" rotate="90deg"></iconify-icon></a></div>
         
         <!-- Button trigger modal -->
-          <button type="button" class="btn float-end m-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Delete
+        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body d-flex justify-content-center align-items-center flex-column">
+                <iconify-icon icon="el:ok-circle" style="color: green;" width="250" height="250"></iconify-icon>
+                <p class="mt-5">Data <strong>Dillan 1990</strong> berhasil dihapus!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Modal 2</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                Hide this modal and show the first with the button below.
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="btn float-end m-2 text-light" data-bs-toggle="modal" href="#exampleModalToggle" role="button">
+          Delete
+        </button>
+
+        <!-- Button trigger modal -->
+          <button type="button" class="btn float-end m-2 text-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Edit
           </button>
           
           <!-- Modal -->
@@ -73,33 +107,9 @@
               </div>
             </div>
           </div>
-
-        <!-- Button trigger modal -->
-          <button type="button" class="btn float-end m-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Edit
-          </button>
-          
-          <!-- Modal -->
-          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  ...
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          
       </div>
-      <div class="col-6" style="height: 50vh ; width: 100vw;">
+
+      <div class="col-6 p-3" style="height: 50vh ; width: 100vw;">
         <div class="row">
           <div class=" col-8">
             <div class="left-side float-start">
@@ -114,7 +124,7 @@
           </div>
           <div class=" col-4 d-flex flex-column justify-content-center align-items-center">
               <img src="/assets/dilan1990.jpg" class="card-img-top shadow-lg" alt="" style="width: 10rem; height: 15rem; border-radius: 25px;">
-              <button type="button" class="btn btn-warning mt-5 text-light shadow block">Borrow</button>
+              <button type="button" class="btn btn-lg btn-warning mt-5 text-light shadow block mb-5">Borrow</button>
           </div>
         </div>
       </div>
