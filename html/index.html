@@ -73,17 +73,30 @@
       </div>
 
       <div class="offcanvas-body">
-        <div class="d-flex flex-column mb-3">
-          <div class="p-2">Flex item 1</div>
-          <div class="p-2">Flex item 2</div>
-          <div class="p-2">Flex item 3</div>
+        <div class="d-flex flex-column mb-3 justify-content-center">
+          <div class="p-2 d-flex flex-column align-items-center justify-content-center">
+            <img src="https://i.pravatar.cc/150?u=fake@pravatar.com" class="rounded-circle mb-2" alt="...">
+            <h2>Aldy Fikhri</h2>
+            <a href="login.html" rel="noopener noreferrer" type="button" class="btn btn-outline-secondary d-flex">
+              <iconify-icon icon="humbleicons:logout" width="25" height="25"></iconify-icon>Logout
+            </a>
+          </div>
+          <div class="p-2 float-left mt-3 ms-5">
+            <a href=""><h3>Explore</h3></a>
+          </div>
+          <div class="p-2 ms-5">
+            <a href=""><h3>History</h3></a>
+          </div>
+          <div class="p-2 ms-5">
+            <a href=""><h3>Add Book</h3></a>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- Home Section -->
+    <!-- Carousel Section -->
     <div class="d-flex flex-column mb-3 justify-content-center align-items-center">
-      <div class="p-2">
+      <div class="p-5">
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
 
           <div class="carousel-inner">
@@ -111,33 +124,41 @@
         </div>
       </div>
 
+      <!-- List Books Section -->
       <div class="p-2 w-100 mt-5">
         <h2 class="ms-5 mb-3">List Books</h2>
         <div class="container-fluid d-flex justify-content-evenly mt-3">
 
-          <div class="card m-1 shadow-lg" style="width: 20rem">
-            <img src="/assets/dilan1990.jpg" class="card-img-top h-50" alt="" />
-            <div class="card-body">
-              <h5 class="card-title text-center">Dilan 1990</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore reprehenderit nesciunt, ea placeat odit ducimus excepturi asperiores dolorum libero corrupti!</p>
+          <a href="detail.html" target="_blank" rel="noopener noreferrer" class="h-50">
+            <div class="card m-1 shadow-lg" style="width: 20rem">
+              <img src="/assets/dilan1990.jpg" class="card-img-top h-50" alt="" />
+              <div class="card-body">
+                <h5 class="card-title text-center">Dilan 1990</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime ratione aspernatur, eaque dolorem quam quod consequatur debitis placeat nihil at ab esse, ipsum reprehenderit neque.</p>
+              </div>
             </div>
-          </div>
+          </a>
 
-          <div class="card m-1 shadow-lg" style="width: 20rem">
-            <img src="/assets/atomic.jpg" class="card-img-top h-50" alt="" />
-            <div class="card-body">
-              <h5 class="card-title text-center">Atomic Habits</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime ratione aspernatur, eaque dolorem quam quod consequatur debitis placeat nihil at ab esse, ipsum reprehenderit neque.</p>
+          <a href="detail.html" target="_blank" rel="noopener noreferrer" class="h-50">
+            <div class="card m-1 shadow-lg" style="width: 20rem">
+              <img src="/assets/atomic.jpg" class="card-img-top h-50" alt="" />
+              <div class="card-body">
+                <h5 class="card-title text-center">Atomic Habits</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime ratione aspernatur, eaque dolorem quam quod consequatur debitis placeat nihil at ab esse, ipsum reprehenderit neque.</p>
+              </div>
             </div>
-          </div>
+          </a>
 
-          <div class="card m-1 shadow-lg" style="width: 20rem">
-            <img src="/assets/react.jpg" class="card-img-top h-50" alt="" />
-            <div class="card-body">
-              <h5 class="card-title text-center">React Native</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum deleniti officiis in reprehenderit eum, deserunt voluptas molestiae maiores obcaecati blanditiis?</p>
+
+          <a href="detail.html" target="_blank" rel="noopener noreferrer" class="h-50">
+            <div class="card m-1 shadow-lg" style="width: 20rem">
+              <img src="/assets/react.jpg" class="card-img-top h-50" alt="" />
+              <div class="card-body">
+                <h5 class="card-title text-center">React Native</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime ratione aspernatur, eaque dolorem quam quod consequatur debitis placeat nihil at ab esse, ipsum reprehenderit neque.</p>
+              </div>
             </div>
-          </div>
+          </a>
 
         </div>
       </div>
