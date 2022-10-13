@@ -16,13 +16,23 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
   </head>
   <body>
+
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-light shadow">
       <div class="container-fluid">
+
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <div class="sidebar-menu">
+            <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> All Categories </a>
@@ -31,6 +41,7 @@
                 <li><a class="dropdown-item" href="#">Menu 2</a></li>
               </ul>
             </li>
+
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> All Times </a>
               <ul class="dropdown-menu">
@@ -39,19 +50,42 @@
               </ul>
             </li>
           </ul>
+          
           <form class="d-flex" role="search">
             <input class="form-control me-2 rounded-pill" type="search" placeholder="Search" aria-label="Search" />
           </form>
+
           <iconify-icon icon="clarity:book-solid" width="35" height="35"></iconify-icon>
           <a class="navbar-brand" href="#">Library</a>
+
         </div>
       </div>
     </nav>
+
+    <!-- Sidebar -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
+        <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+          <span class="navbar-toggler-icon"><iconify-icon icon="dashicons:no-alt" width="25" height="25"></iconify-icon></span>
+        </button>
+      </div>
+
+      <div class="offcanvas-body">
+        <div class="d-flex flex-column mb-3">
+          <div class="p-2">Flex item 1</div>
+          <div class="p-2">Flex item 2</div>
+          <div class="p-2">Flex item 3</div>
+        </div>
+      </div>
+    </div>
 
     <!-- Home Section -->
     <div class="d-flex flex-column mb-3 justify-content-center align-items-center">
       <div class="p-2">
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="/assets/placeimg_640_360_arch (1).jpg" class="d-block w-100 h-50 rounded" alt="..." />
@@ -63,20 +97,24 @@
               <img src="/assets/placeimg_640_360_arch (2).jpg" class="d-block w-100 h-50 rounded" alt="..." />
             </div>
           </div>
+
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
+
           <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
+
         </div>
       </div>
 
       <div class="p-2 w-100 mt-5">
-        <h2>List Books</h2>
+        <h2 class="ms-5 mb-3">List Books</h2>
         <div class="container-fluid d-flex justify-content-evenly mt-3">
+
           <div class="card m-1 shadow-lg" style="width: 20rem">
             <img src="/assets/dilan1990.jpg" class="card-img-top h-50" alt="" />
             <div class="card-body">
@@ -84,6 +122,7 @@
               <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore reprehenderit nesciunt, ea placeat odit ducimus excepturi asperiores dolorum libero corrupti!</p>
             </div>
           </div>
+
           <div class="card m-1 shadow-lg" style="width: 20rem">
             <img src="/assets/atomic.jpg" class="card-img-top h-50" alt="" />
             <div class="card-body">
@@ -91,6 +130,7 @@
               <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime ratione aspernatur, eaque dolorem quam quod consequatur debitis placeat nihil at ab esse, ipsum reprehenderit neque.</p>
             </div>
           </div>
+
           <div class="card m-1 shadow-lg" style="width: 20rem">
             <img src="/assets/react.jpg" class="card-img-top h-50" alt="" />
             <div class="card-body">
@@ -98,6 +138,7 @@
               <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum deleniti officiis in reprehenderit eum, deserunt voluptas molestiae maiores obcaecati blanditiis?</p>
             </div>
           </div>
+
         </div>
       </div>
     </div>
