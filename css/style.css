@@ -3,8 +3,36 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  min-height: 100vh !important;
+  font-family: "Montserrat", sans-serif !important;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 a {
   text-decoration: none !important;
+  font-weight: bolder;
+  color: black;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+}
+a:hover {
+  font-size: 20px;
+  box-sizing: border-box;
+  text-shadow: 3px 5px 6px rgba(0, 0, 0, 0.7);
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
 }
 
 /* Detail Section */
@@ -16,7 +44,23 @@ a {
   background-size: cover;
 }
 
-/* Login */
+.detail-card {
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+}
+
+.detail-card:hover {
+  box-sizing: border-box;
+  text-shadow: 3px 5px 6px rgba(0, 0, 0, 0.7);
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+}
+
+/* Login and Sign Up Section */
 #left-side {
   background-image: url("/assets/alfons-morales-YLSwjSy7stw-unsplash.jpg");
   background-repeat: no-repeat;
@@ -42,12 +86,4 @@ footer {
   height: 100vh;
   margin-top: auto;
   padding: 25px;
-}
-
-/* applies to medium devices (tablets, less than 992px) */
-@media (min-width: 768px) {
-  .list-books {
-    display: flex !important;
-    flex-direction: column !important;
-  }
 }

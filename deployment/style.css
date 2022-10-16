@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+/* Detail Section */
+.upper-content {
+  height: 50vh !important;
+  width: 100vw !important;
+  background-image: url(/assets/dilan1990.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Login */
+#left-side {
+  background-image: url("/assets/alfons-morales-YLSwjSy7stw-unsplash.jpg");
+  background-repeat: no-repeat;
+}
+
+.title-left {
+  z-index: 100;
+  color: white;
+}
+
+.login-btn {
+  background-color: black !important;
+  color: white !important;
+}
+
+.signup-btn {
+  background-color: white !important;
+  color: black !important;
+  border: 2px solid #ccc !important;
+}
+
+footer {
+  height: 100vh;
+  margin-top: auto;
+  padding: 25px;
+}
+
+/* applies to medium devices (tablets, less than 992px) */
+@media (min-width: 768px) {
+  .list-books {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+}

@@ -1,0 +1,7 @@
+.upper-content {
+    height: 50vh !important;
+    width: 100vw !important;
+    background-image: url(/assets/dilan1990.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
