@@ -13,9 +13,9 @@ This project was created to fulfill the assessment in the second week of the Faz
 Assessment
 
 ### How To Run
-Use your browser to open this project
+Use your browser to open this project.
 
 ### Developer
-| Nama | Position | Github Profile |
+| Name | Position | Github Profile |
 | ------ | ------ | ------ |
 | Aldy Fikhri Muhammad | Developer | https://github.com/aldyfikhrimuhammad |
