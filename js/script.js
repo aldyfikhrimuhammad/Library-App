@@ -19,3 +19,12 @@ if (alertTrigger) {
         alert('Nice, you triggered this alert message!', 'success')
     })
 }
+
+// Flickity
+/*
+ var flkty = new Flickity( '.main-gallery', {
+     // options
+     cellAlign: 'left',
+     contain: true
+   });
+*/

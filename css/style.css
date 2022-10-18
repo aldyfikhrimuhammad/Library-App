@@ -20,19 +20,35 @@ a {
   text-decoration: none !important;
   font-weight: bolder;
   color: black;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+a:hover {
+  box-sizing: border-box;
+  text-shadow: 3px 5px 6px rgba(0, 0, 0, 0.7);
+}
+
+/* Home Section */
+.detail-card {
+  text-decoration: none !important;
+  font-weight: bolder;
+  color: black;
   transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -ms-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
 }
-a:hover {
-  font-size: 20px;
-  box-sizing: border-box;
-  text-shadow: 3px 5px 6px rgba(0, 0, 0, 0.7);
+
+.detail-card:hover {
   transform: scale(1.1);
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
+  text-decoration: none !important;
+  text-shadow: none !important;
 }
 
 /* Detail Section */
@@ -52,6 +68,14 @@ a:hover {
   -o-transition: all 0.2s ease-in-out;
 }
 
+.detail-card p {
+  font-weight: 400;
+}
+
+.detail-card h5 {
+  font-weight: bolder;
+}
+
 .detail-card:hover {
   box-sizing: border-box;
   text-shadow: 3px 5px 6px rgba(0, 0, 0, 0.7);
@@ -59,6 +83,39 @@ a:hover {
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
 }
+
+/* Flickity */
+/* .gallery {
+  background: #eee;
+}
+
+.gallery-cell {
+  width: 66%;
+  height: 200px;
+  margin-right: 10px;
+  background: #8c8;
+  counter-increment: gallery-cell;
+}
+
+.gallery-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+.gallery-cell {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery-cell {
+    width: 50%;
+  }
+}
+*/
 
 /* Login and Sign Up Section */
 #left-side {
