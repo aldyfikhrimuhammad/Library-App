@@ -1,21 +1,21 @@
 # Library-App
 
-# Project Start
+### Project Start
 12 Oktober 2022
 
-# Project End
+### Project End
 17 Oktober 2022
 
-# Description
+### Description
 This project was created to fulfill the assessment in the second week of the Fazztrack and BCA bootcamps, namely by slicing from the previously provided designs.
 
-# Project Type
+### Project Type
 Assessment
 
-# How To Run
+### How To Run
 Use your browser to open this project
 
-# Developer
+### Developer
 | Nama | Position | Github Profile |
 | ------ | ------ | ------ |
 | Aldy Fikhri Muhammad | Developer | https://github.com/aldyfikhrimuhammad |
